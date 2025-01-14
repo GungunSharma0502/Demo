@@ -1,0 +1,132 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          Edutech Solutions at Sunscript
+        </h1>
+
+        <h2 style={styles.sectionHeading}>
+          1. Edutech Solutions at Sunscript: Shaping the Future of Education
+        </h2>
+        <p style={styles.paragraph}>
+          At Sunscript, we provide innovative Edutech solutions that are transforming the way education is delivered and experienced. Our technologies empower educational institutions, instructors, and learners to enhance the learning process, increase engagement, and streamline administrative tasks for a more effective and accessible education system.
+        </p>
+
+        <h2 style={styles.sectionHeading}>
+          2. Our Edutech Solutions: Empowering Educators and Learners
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Learning Management Systems (LMS):</span> Implementing platforms to deliver, manage, and track online courses and learning materials efficiently.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Virtual Classrooms:</span> Enabling interactive online learning with live lectures, video conferencing, and collaboration tools.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>E-Learning Platforms:</span> Designing scalable, user-friendly platforms that provide access to a variety of online courses and educational resources.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Student Engagement Tools:</span> Creating apps and tools that increase student interaction, participation, and motivation in both virtual and in-person environments.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>AI-Powered Learning:</span> Using AI to personalize learning paths, assess student progress, and recommend tailored learning content.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Educational Analytics:</span> Leveraging data analytics to monitor student performance, identify areas for improvement, and optimize educational strategies.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          3. Why Choose Sunscript for Edutech Solutions?
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Innovative Learning Technologies:</span> We provide cutting-edge solutions that make learning more accessible, engaging, and effective.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Custom Solutions:</span> Our Edutech services are tailored to the specific needs of educational institutions, instructors, and students.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Scalable Platforms:</span> We build solutions that grow with your institution, ensuring long-term success and flexibility.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Enhanced Learning Experience:</span> Our tools focus on improving student outcomes, making education more interactive and personalized.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          4. Transform Education with Technology
+        </h2>
+        <p style={styles.paragraph}>
+          Ready to enhance your educational institution’s digital transformation? Contact Sunscript to explore how our Edutech solutions can improve teaching, learning, and student success.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

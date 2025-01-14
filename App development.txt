@@ -1,0 +1,117 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    color: "#ADD8E6",
+    fontWeight: "bold",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          App Development - Building Powerful and User-Centric Mobile Solutions
+        </h1>
+
+        <h2 style={styles.sectionHeading}>1. What is App Development?</h2>
+        <p style={styles.paragraph}>
+          App development involves creating mobile and web applications that provide seamless functionality and exceptional user experiences. At Sunscript, we specialize in developing innovative, high-performance apps tailored to meet the unique needs of your business and audience.
+        </p>
+
+        <h2 style={styles.sectionHeading}>2. Why Choose Sunscript for App Development?</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Custom Solutions:</span> We create personalized apps that align with your business goals and user expectations.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cross-Platform Expertise:</span> Our team excels in developing apps for iOS, Android, and hybrid platforms.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>User-Focused Design:</span> We prioritize intuitive interfaces and smooth navigation to deliver outstanding user experiences.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Scalability:</span> Apps are designed to grow with your business, supporting increased demand and new features.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Integration Capabilities:</span> Seamlessly integrate your app with other systems or APIs for enhanced functionality.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>3. Our App Development Services</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Native App Development:</span> Building feature-rich apps for iOS and Android platforms to leverage their full potential.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cross-Platform Development:</span> Developing apps with frameworks like Flutter and React Native for wider reach and cost efficiency.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>UI/UX Design:</span> Designing intuitive and visually appealing interfaces for better user engagement.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>App Maintenance & Updates:</span> Ensuring your app stays relevant, secure, and up-to-date with the latest trends.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Performance Optimization:</span> Enhancing app speed, reliability, and responsiveness for a flawless user experience.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>4. Benefits of App Development with Sunscript</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Increased Mobile Presence:</span> Establish your brand on mobile platforms and engage with a broader audience.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Engaging User Experiences:</span> Create personalized app experiences that foster higher user interaction and retention.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Long-Term Scalability:</span> Design flexible app architectures that grow with your business and evolving user needs.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Seamless Multi-Device Functionality:</span> Deliver optimized performance across a wide range of devices, ensuring a consistent experience.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Robust App Security:</span> Incorporate advanced security features to safeguard user data and maintain app integrity.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>5. Partner with Sunscript</h2>
+        <p style={styles.paragraph}>
+          Let us help you bring your app ideas to life with cutting-edge solutions that provide outstanding user experiences and business value.
+        </p>
+
+        <p style={{...styles.paragraph, fontWeight: "bold", marginTop: "2rem"}}>
+          Get in touch with us today to start building powerful, user-centric mobile solutions!
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

@@ -1,0 +1,132 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          Healthcare Solutions at Sunscript
+        </h1>
+
+        <h2 style={styles.sectionHeading}>
+          1. Healthcare Solutions at Sunscript: Transforming Healthcare with Technology
+        </h2>
+        <p style={styles.paragraph}>
+          At Sunscript, we offer innovative healthcare solutions designed to improve patient care, enhance operational efficiency, and streamline processes across the healthcare industry. Our cutting-edge technologies empower healthcare providers to deliver better outcomes while reducing costs and increasing access to quality care.
+        </p>
+
+        <h2 style={styles.sectionHeading}>
+          2. Our Healthcare Solutions: Revolutionizing the Healthcare Ecosystem
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Electronic Health Records (EHR):</span> Implementing secure, user-friendly systems to manage patient data and improve collaboration among healthcare providers.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Telemedicine Solutions:</span> Enabling virtual consultations and remote care through advanced telehealth platforms, enhancing accessibility and patient convenience.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Healthcare Analytics:</span> Using data analytics to monitor patient outcomes, predict trends, and support evidence-based decision-making.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Patient Engagement Tools:</span> Designing platforms and apps that empower patients to manage their health, schedule appointments, and access medical information.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Hospital Management Systems:</span> Streamlining administrative and operational tasks to improve hospital efficiency and patient experience.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>AI and Machine Learning:</span> Leveraging AI technologies for diagnostics, predictive analytics, and personalized treatment plans.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          3. Why Choose Sunscript for Healthcare Solutions?
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Innovative Healthcare Technologies:</span> We bring the latest advancements in healthcare technology to your organization.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Customizable Solutions:</span> Our solutions are tailored to meet the specific needs of healthcare providers and patients, ensuring maximum impact.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Data Security and Compliance:</span> We prioritize patient privacy and ensure that all solutions are HIPAA-compliant and secure.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Enhanced Patient Care:</span> Our technologies improve care delivery, making it more personalized, efficient, and accessible.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          4. Transform Your Healthcare Services with Advanced Technology
+        </h2>
+        <p style={styles.paragraph}>
+          If you’re looking to modernize your healthcare services and improve patient outcomes, contact Sunscript to discover how our innovative solutions can help transform your healthcare organization.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

@@ -1,0 +1,108 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    color: "#ADD8E6",
+    fontWeight: "bold",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          DevOps Services - Accelerating Development with Streamlined Operations
+        </h1>
+
+        <h2 style={styles.sectionHeading}>1. What is DevOps?</h2>
+        <p style={styles.paragraph}>
+          DevOps is a collaborative approach that bridges the gap between development and operations, enabling faster and more reliable software delivery. At Sunscript, our DevOps services focus on optimizing workflows, automating processes, and ensuring seamless integration for efficient project management and delivery.
+        </p>
+
+        <h2 style={styles.sectionHeading}>2. Why Choose Sunscript for DevOps Services?</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Streamlined Workflow:</span> We integrate development and operations teams for enhanced collaboration and productivity.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Automation Expertise:</span> Automating repetitive tasks to minimize errors and accelerate delivery cycles.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Scalability:</span> Solutions designed to grow with your business, ensuring flexibility and adaptability.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Continuous Monitoring:</span> Real-time performance monitoring and troubleshooting for optimal system health.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Custom DevOps Solutions:</span> Tailored strategies to suit the unique needs of your business and project goals.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>3. Our DevOps Services</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>CI/CD Pipeline Implementation:</span> Streamlining development and deployment through Continuous Integration and Continuous Delivery.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Infrastructure as Code (IaC):</span> Automating infrastructure provisioning with tools like Terraform and Ansible.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cloud Integration:</span> Migrating and managing workloads across AWS, Azure, Google Cloud, and more.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Monitoring and Logging:</span> Setting up advanced monitoring tools to identify and resolve issues proactively.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Containerization & Orchestration:</span> Leveraging Docker and Kubernetes for efficient application deployment and scaling.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>4. Benefits of DevOps with Sunscript</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Faster Time-to-Market:</span> Accelerate the delivery of features and updates with streamlined workflows.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Improved Collaboration:</span> Enhance teamwork between development and operations for seamless execution.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cost Optimization:</span> Reduce infrastructure costs through efficient resource utilization and automation.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Enhanced System Reliability:</span> Achieve high availability and consistent performance with proactive monitoring.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Future-Ready Infrastructure:</span> Build scalable and flexible systems that adapt to changing business requirements.</li>
+        </ul>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

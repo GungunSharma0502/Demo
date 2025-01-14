@@ -1,0 +1,123 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2.5rem",
+    fontWeight: "bold",
+    marginBottom: "0.5rem",
+    textAlign: "left",
+  },
+  subHeading: {
+    color: "white",
+    fontSize: "1.8rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    color: "#ADD8E6",
+    fontWeight: "bold",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>Backend</h1>
+        <h2 style={styles.subHeading}>Back-End Development - Powering Seamless Functionality Behind the Scenes</h2>
+
+        <h3 style={styles.sectionHeading}>1. What is Back-End Development?</h3>
+        <p style={styles.paragraph}>
+          Back-end development focuses on building the foundation and logic that powers a website or application. It ensures that all processes run smoothly behind the scenes, enabling users to have a seamless and efficient experience. At Sunscript, we design robust and scalable back-end systems that serve as the backbone of your digital solutions.
+        </p>
+
+        <h3 style={styles.sectionHeading}>2. Why Choose Sunscript for Back-End Development?</h3>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Reliable Architecture:</span> We create stable and secure frameworks that support your application's functionality.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cutting-Edge Technology:</span> Leveraging technologies like Node.js, Python, PHP, and Java, we deliver innovative back-end solutions.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Scalability:</span> Our systems are designed to grow with your business, ensuring long-term adaptability.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Database Optimization:</span> Efficiently structured databases ensure faster performance and easier data management.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>API Integration:</span> We develop and integrate APIs to enable seamless communication between various systems and platforms.</li>
+        </ul>
+
+        <h3 style={styles.sectionHeading}>3. Our Back-End Development Services</h3>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Custom Server-Side Development:</span> Tailored back-end solutions to meet your unique business requirements.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Database Design & Management:</span> Creating efficient database structures for optimized data storage and retrieval.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>API Development & Integration:</span> Building robust APIs for smooth interaction between your application and external services.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cloud-Based Solutions:</span> Implementing cloud-based architectures for enhanced scalability and reliability.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Performance Optimization:</span> Streamlining processes to improve speed, efficiency, and overall system performance.</li>
+        </ul>
+
+        <h3 style={styles.sectionHeading}>4. Benefits of Back-End Development with Sunscript</h3>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Enhanced System Reliability:</span> Build a strong and secure foundation for your application's core functionalities.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Optimized Performance:</span> Ensure smooth data processing and faster response times for an exceptional user experience.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Seamless Integration:</span> Easily connect your application to third-party tools and platforms for enhanced capabilities.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Future-Ready Solutions:</span> Scalable architectures that adapt to the evolving demands of your business.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Advanced Data Protection:</span> Incorporating modern encryption methods and secure protocols to safeguard sensitive data and maintain user trust.</li>
+        </ul>
+
+        <h3 style={styles.sectionHeading}>5. Partner with Sunscript</h3>
+        <p style={styles.paragraph}>
+          At Sunscript, we create back-end systems that drive the performance and functionality of your digital solutions. Let us handle the complexity while you focus on growing your business.
+        </p>
+
+        <p style={{...styles.paragraph, fontWeight: "bold", marginTop: "2rem"}}>
+          Get in touch with us today to build reliable, scalable, and high-performance back-end solutions!
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

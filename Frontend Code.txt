@@ -1,0 +1,108 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>What is Front-End Development?</h1>
+        <p style={styles.paragraph}>
+          Front-end development revolves around creating the visual and interactive elements of a website or application that users directly engage with. At Sunscript, we specialize in designing seamless and user-friendly interfaces that deliver exceptional digital experiences and make lasting impressions.
+        </p>
+
+        <h2 style={styles.sectionHeading}>Why Choose Sunscript for Front-End Development?</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Creative Excellence:</span> Our designs combine innovation and creativity, perfectly aligned with your brand's identity.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Modern Technologies:</span> We utilize the latest frameworks like React, Angular, and Vue.js to deliver cutting-edge solutions.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Responsive Design:</span> Every interface we build is optimized to perform flawlessly across desktops, tablets, and smartphones.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Interactive Features:</span> We integrate animations and dynamic elements to enhance engagement and functionality.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>User-Centric Focus:</span> Intuitive navigation and seamless usability are at the heart of our front-end development process.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>Our Front-End Development Services</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Custom Web Design:</span> Crafting unique designs tailored to your brand's personality and goals.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Responsive Web Development:</span> Ensuring adaptability and top-notch performance across all devices.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Single Page Applications (SPA):</span> Building fast, efficient, and interactive web apps for enhanced user experiences.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Futuristic 3D Designs:</span> Incorporating cutting-edge 3D visuals and modern concepts to create standout interfaces.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Cross-Browser Compatibility:</span> Guaranteeing consistent functionality across all major web browsers.</li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>Benefits of Front-End Development with Sunscript</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}><span style={styles.emphasis}>Enhanced User Engagement:</span> Delivering captivating designs that keep users hooked.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Optimized Performance:</span> Lightweight and clean code for faster load times and smoother browsing.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>SEO-Friendly Structures:</span> Creating optimized front-end architectures to boost search engine rankings.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Future-Ready Designs:</span> Scalable and adaptable solutions to keep you ahead of industry trends.</li>
+          <li style={styles.listItem}><span style={styles.emphasis}>Stronger Brand Identity:</span> Custom-crafted interfaces that reflect your business's uniqueness and values.</li>
+        </ul>
+
+        <p style={{...styles.paragraph, fontStyle: "italic", marginTop: "2rem"}}>
+          Partner with Sunscript to bring your vision to life through expertly designed, user-focused interfaces. Let us help you create digital experiences that inspire, engage, and elevate your brand.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

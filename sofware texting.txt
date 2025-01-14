@@ -1,0 +1,135 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  },
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          Software Testing Services at Sunscript
+        </h1>
+
+        <h2 style={styles.sectionHeading}>
+          1. Software Testing Services at Sunscript: Ensure Quality and Reliability
+        </h2>
+        <p style={styles.paragraph}>
+          At Sunscript, we provide comprehensive software testing services to ensure your products are free from bugs and perform optimally. Our team of experts follows rigorous testing protocols to deliver reliable, high-quality software that meets your business requirements and user expectations.
+        </p>
+
+        <h2 style={styles.sectionHeading}>
+          2. Our Software Testing Process: Delivering Flawless Products
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Requirement Analysis:</span> Understanding the project’s scope and specific testing needs to define a clear strategy.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Test Planning:</span> Designing a customized testing plan that aligns with your business goals and technical specifications.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Functional Testing:</span> Ensuring that all features and functionalities of your software work as intended.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Performance Testing:</span> Assessing how your software performs under various loads to ensure speed and stability.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Security Testing:</span> Identifying vulnerabilities to safeguard your software from potential threats and breaches.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Usability Testing:</span> Evaluating the user experience to ensure the software is intuitive and user-friendly.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Regression Testing:</span> Verifying that new changes or updates do not affect the existing functionality of the software.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          3. Why Choose Sunscript for Software Testing?
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Experienced Testers:</span> Our team consists of skilled professionals with expertise in various testing methodologies and tools.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Comprehensive Testing Coverage:</span> We cover all aspects of testing, from functionality to security, ensuring a fully tested product.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Quality Assurance:</span> We focus on delivering bug-free, reliable software that meets the highest standards.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Efficient and Cost-Effective:</span> Our testing processes are designed to optimize your resources while ensuring the highest quality.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          4. Ensure Quality with Expert Software Testing Services
+        </h2>
+        <p style={styles.paragraph}>
+          If you want to deliver flawless software that meets both technical and user expectations, contact Sunscript to explore how our software testing services can help ensure the success of your project.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

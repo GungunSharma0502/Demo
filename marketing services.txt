@@ -1,0 +1,132 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  },
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          Marketing Services at Sunscript
+        </h1>
+
+        <h2 style={styles.sectionHeading}>
+          1. Marketing Services at Sunscript: Drive Growth with Tailored Strategies
+        </h2>
+        <p style={styles.paragraph}>
+          At Sunscript, we offer comprehensive marketing services designed to boost your brand visibility, engage your target audience, and drive measurable results. Our approach focuses on creating customized marketing strategies that align with your business goals and deliver long-term success.
+        </p>
+
+        <h2 style={styles.sectionHeading}>
+          2. Our Marketing Services: Boost Your Brand and Expand Your Reach
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Digital Marketing Strategy:</span> Crafting data-driven strategies that focus on achieving your specific business objectives.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Search Engine Optimization (SEO):</span> Enhancing your website’s visibility and ranking on search engines to attract organic traffic.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Social Media Marketing:</span> Building engaging social media campaigns that increase brand awareness and foster community engagement.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Content Marketing:</span> Creating valuable content that resonates with your audience, builds trust, and drives conversions.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Email Marketing:</span> Designing targeted email campaigns to nurture leads and maintain customer relationships.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Pay-Per-Click Advertising (PPC):</span> Running cost-effective PPC campaigns to drive traffic and generate leads quickly.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          3. Why Choose Sunscript for Marketing Services?
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Tailored Solutions:</span> We create marketing strategies that are uniquely aligned with your business objectives and audience needs.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Data-Driven Approach:</span> Our decisions are backed by data and analytics to ensure the best return on your marketing investment.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Experienced Team:</span> Our team of marketing experts brings years of experience and innovative thinking to the table.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Comprehensive Support:</span> We provide ongoing support and analysis to refine strategies and ensure continued growth.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          4. Ready to Accelerate Your Growth with Marketing Solutions?
+        </h2>
+        <p style={styles.paragraph}>
+          If you’re looking to enhance your brand’s visibility and reach, contact Sunscript to learn how our marketing services can help you achieve your business goals. Let’s drive meaningful growth together.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

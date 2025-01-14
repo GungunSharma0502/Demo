@@ -1,0 +1,132 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  }
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          Hospitality Solutions at Sunscript
+        </h1>
+
+        <h2 style={styles.sectionHeading}>
+          1. Hospitality Solutions at Sunscript: Elevating Guest Experiences through Technology
+        </h2>
+        <p style={styles.paragraph}>
+          At Sunscript, we provide innovative technology solutions tailored for the hospitality industry to enhance guest experiences, streamline operations, and drive business growth. Our solutions are designed to optimize everything from booking systems to guest services, ensuring seamless, personalized experiences for both staff and guests.
+        </p>
+
+        <h2 style={styles.sectionHeading}>
+          2. Our Hospitality Solutions: Transforming the Hospitality Experience
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Property Management Systems (PMS):</span> Streamlining hotel operations, including booking, check-ins, and guest data management for efficient service delivery.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Online Booking and Reservation Systems:</span> Implementing easy-to-use, integrated booking platforms that simplify the reservation process for guests.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Guest Engagement Tools:</span> Providing personalized services and communication through apps and messaging platforms to enhance the guest experience.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>CRM for Hospitality:</span> Managing customer relationships effectively with tailored marketing strategies and loyalty programs.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Mobile Solutions:</span> Developing mobile apps for guests to access services, check-in/out, request amenities, and more, all from their smartphones.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Data Analytics:</span> Leveraging data to analyze guest preferences, optimize operations, and forecast demand for better decision-making.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          3. Why Choose Sunscript for Hospitality Solutions?
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Customized Solutions:</span> We provide tailored technology solutions to meet the specific needs of your hospitality business, whether it’s a hotel, resort, or restaurant.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Enhanced Guest Experience:</span> Our solutions prioritize seamless and personalized guest interactions, leading to higher satisfaction and loyalty.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Operational Efficiency:</span> We help streamline daily operations, reducing costs and improving service quality.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Scalable and Flexible:</span> Our technology solutions grow with your business, offering scalability for future expansion and innovation.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          4. Transform Your Hospitality Business with Advanced Technology
+        </h2>
+        <p style={styles.paragraph}>
+          Ready to enhance your guest experiences and streamline your operations? Contact Sunscript to discover how our hospitality solutions can take your business to the next level.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;

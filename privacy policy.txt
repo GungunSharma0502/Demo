@@ -1,0 +1,206 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  },
+};
+
+const PrivacyPolicy = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>Privacy Policy for Sunscript</h1>
+        <p style={styles.paragraph}>
+          <span style={styles.emphasis}>Effective Date:</span> [Insert Date]
+        </p>
+        <p style={styles.paragraph}>
+          At Sunscript, your privacy is our priority. This Privacy Policy
+          outlines how we collect, use, store, and protect your personal
+          information when you visit our website or use our services. By
+          accessing our site, you agree to the practices described here.
+        </p>
+
+        <h2 style={styles.sectionHeading}>1. Information We Collect</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Personal Information:</span> This
+            includes your name, email address, phone number, company details,
+            and any other details you provide when contacting us or signing up
+            for our services.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Technical Data:</span> This may
+            include your IP address, browser type, device information, and usage
+            data, collected through cookies and other tracking technologies.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Payment Information:</span> If you
+            make a purchase, we collect billing details and payment information
+            securely.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>2. How We Use Your Data</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>To deliver and enhance our services.</li>
+          <li style={styles.listItem}>
+            To communicate updates, offers, and respond to your inquiries.
+          </li>
+          <li style={styles.listItem}>
+            To securely process payments and manage transactions.
+          </li>
+          <li style={styles.listItem}>
+            To analyze website performance and improve user experience.
+          </li>
+          <li style={styles.listItem}>
+            To comply with legal obligations and enforce our terms.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>3. Sharing Your Information</h2>
+        <p style={styles.paragraph}>
+          We respect your privacy and do not sell or trade your personal data.
+          However, we may share your information:
+        </p>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            With trusted partners and service providers who assist in delivering
+            our services, such as payment processors and hosting platforms.
+          </li>
+          <li style={styles.listItem}>
+            To comply with legal requirements, such as responding to lawful
+            requests from authorities.
+          </li>
+          <li style={styles.listItem}>
+            To protect the rights, safety, and property of Sunscript, our users,
+            or others.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>4. Cookies and Tracking</h2>
+        <p style={styles.paragraph}>
+          We use cookies and similar technologies to enhance your browsing
+          experience and monitor website performance. You can adjust your cookie
+          preferences through your browser settings to limit or disable
+          tracking.
+        </p>
+
+        <h2 style={styles.sectionHeading}>5. Data Protection</h2>
+        <p style={styles.paragraph}>
+          We employ robust security measures to safeguard your data against
+          unauthorized access or misuse. While we strive to protect your
+          information, no system is entirely foolproof, and we encourage you to
+          take precautions when sharing personal data online.
+        </p>
+
+        <h2 style={styles.sectionHeading}>6. Your Rights</h2>
+        <p style={styles.paragraph}>
+          Depending on your location, you may have rights regarding your
+          personal information, such as:
+        </p>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            Requesting access to the data we hold about you.
+          </li>
+          <li style={styles.listItem}>
+            Asking for corrections or updates to your information.
+          </li>
+          <li style={styles.listItem}>
+            Requesting the deletion of your data, subject to legal or
+            contractual obligations.
+          </li>
+          <li style={styles.listItem}>
+            Opting out of receiving marketing communications.
+          </li>
+        </ul>
+        <p style={styles.paragraph}>
+          For any such requests, please contact us at [Insert Contact Email].
+        </p>
+
+        <h2 style={styles.sectionHeading}>7. Third-Party Websites</h2>
+        <p style={styles.paragraph}>
+          Our website may contain links to external sites. Sunscript is not
+          responsible for the privacy practices of these third-party websites,
+          and we encourage you to review their privacy policies.
+        </p>
+
+        <h2 style={styles.sectionHeading}>8. Updates to This Policy</h2>
+        <p style={styles.paragraph}>
+          We may revise this Privacy Policy periodically to reflect changes in
+          our practices or legal requirements. Any updates will be posted on
+          this page with a new effective date.
+        </p>
+
+        <h2 style={styles.sectionHeading}>9. Contact Sunscript</h2>
+        <p style={styles.paragraph}>
+          If you have questions or need further clarification about this Privacy
+          Policy, feel free to reach out to us:
+        </p>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>Sunscript</li>
+          <li style={styles.listItem}>Email: [Insert Email Address]</li>
+          <li style={styles.listItem}>Phone: [Insert Phone Number]</li>
+          <li style={styles.listItem}>Address: [Insert Address]</li>
+        </ul>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default PrivacyPolicy;

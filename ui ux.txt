@@ -1,0 +1,129 @@
+import React from "react";
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    border: "2px solid black",
+    width: "100%",
+    height: "100%",
+    margin: "20px auto",
+    backgroundColor: "black",
+  },
+  leftSection: {
+    flex: 2,
+    borderRight: "2px solid white",
+    minHeight: "100vh",
+    backgroundColor: "#1D3557",
+    padding: "2rem",
+    overflowY: "auto",
+  },
+  rightSection: {
+    flex: 1,
+    minHeight: "100vh",
+  },
+  mainHeading: {
+    color: "white",
+    fontSize: "2rem",
+    fontWeight: "bold",
+    marginBottom: "1.5rem",
+    textAlign: "left",
+  },
+  sectionHeading: {
+    color: "white",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    marginTop: "2rem",
+    marginBottom: "1rem",
+    textAlign: "left",
+  },
+  paragraph: {
+    color: "white",
+    fontSize: "1.1rem",
+    lineHeight: "1.6",
+    marginBottom: "1.5rem",
+  },
+  list: {
+    color: "white",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  listItem: {
+    fontSize: "1.1rem",
+    marginBottom: "0.8rem",
+    lineHeight: "1.6",
+  },
+  emphasis: {
+    fontWeight: "bold",
+    color: "#ADD8E6",
+  },
+};
+
+const SplitContainer = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.leftSection}>
+        <h1 style={styles.mainHeading}>
+          UI/UX Design Services at Sunscript
+        </h1>
+
+        <h2 style={styles.sectionHeading}>
+          1. UI/UX Design Services at Sunscript: Create Impactful User Experiences
+        </h2>
+        <p style={styles.paragraph}>
+          At Sunscript, we specialize in crafting visually appealing and highly functional UI/UX designs that offer seamless interactions for your users. Our design solutions focus on enhancing user engagement, improving accessibility, and creating an intuitive user journey for your website or application.
+        </p>
+
+        <h2 style={styles.sectionHeading}>
+          2. Our UI/UX Design Process: Focusing on Usability and Aesthetics
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>User Research:</span> Conducting in-depth research to understand your target audience’s needs and preferences.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Wireframing and Prototyping:</span> Designing clear and functional wireframes to visualize the user flow and functionality.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>UI Design:</span> Crafting visually attractive and cohesive user interfaces that align with your brand identity.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>UX Optimization:</span> Enhancing usability by refining the user journey to ensure intuitive and efficient interactions.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Testing and Refinement:</span> Iterative testing to gather feedback, making adjustments to improve usability and user satisfaction.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          3. Why Choose Sunscript for UI/UX Design?
+        </h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>User-Centered Approach:</span> We focus on creating designs that prioritize the needs and behaviors of your target users.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Creative Expertise:</span> Our team has a deep understanding of design principles and industry trends to craft innovative solutions.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Brand Consistency:</span> We ensure that your designs align with your brand values and create a consistent visual language.
+          </li>
+          <li style={styles.listItem}>
+            <span style={styles.emphasis}>Improved Engagement:</span> Our designs are optimized to drive user engagement, reduce bounce rates, and increase conversions.
+          </li>
+        </ul>
+
+        <h2 style={styles.sectionHeading}>
+          4. Transform Your Digital Presence with Expert UI/UX Design
+        </h2>
+        <p style={styles.paragraph}>
+          Ready to elevate the user experience of your website or app? Get in touch with Sunscript to create engaging, user-friendly, and visually stunning UI/UX designs that captivate your audience.
+        </p>
+      </div>
+      <div style={styles.rightSection}></div>
+    </div>
+  );
+};
+
+export default SplitContainer;
